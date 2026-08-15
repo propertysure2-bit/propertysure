@@ -18,12 +18,12 @@ export default function Footer() {
           
           {/* Col 1: Brand Info */}
           <div className="lg:col-span-2 space-y-4">
-            <div className="relative h-12 w-52 overflow-hidden bg-white/10 p-2 rounded-lg">
+            <div className="relative h-16 md:h-20 w-64 md:w-72 overflow-hidden bg-white/95 p-2.5 rounded-xl shadow-lg border border-gold-accent/30">
               <Image 
                 src="/logo_finanace.jpeg" 
                 alt="Property Sure Logo" 
                 fill 
-                className="object-contain object-left p-1"
+                className="object-contain object-left p-1 scale-105"
               />
             </div>
             <p className="text-gray-400 text-xs md:text-sm leading-relaxed max-w-sm">

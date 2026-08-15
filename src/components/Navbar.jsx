@@ -39,12 +39,12 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3">
-            <div className="relative h-12 w-48 md:w-56 overflow-hidden">
+            <div className="relative h-14 md:h-16 w-60 md:w-72 overflow-hidden py-1">
               <Image 
                 src="/logo_finanace.jpeg" 
                 alt="Property Sure Logo" 
                 fill 
-                className="object-contain object-left"
+                className="object-contain object-left scale-105"
                 priority
               />
             </div>
