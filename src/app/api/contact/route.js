@@ -38,8 +38,9 @@ export async function POST(request) {
     // 2. Send Email Notification via Resend to propertysure2@gmail.com
     if (process.env.RESEND_API_KEY) {
       try {
+        const fromEmail = process.env.RESEND_FROM_EMAIL || 'Property Sure Leads <onboarding@resend.dev>';
         await resend.emails.send({
-          from: 'Property Sure Leads <notifications@propertysure.in>',
+          from: fromEmail,
           to: 'propertysure2@gmail.com',
           subject: `🔔 New Contact Lead: ${name} (${phone}) - ${service || 'Enquiry'}`,
           html: getContactEmailHtml({ name, phone, email, city, service, loanAmount, message }),
